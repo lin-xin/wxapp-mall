@@ -1,0 +1,17 @@
+@import '../../common/common.wxss';
+
+.form-box{
+    padding-left: 30rpx;
+}
+.form-box input{
+    height: 90rpx;
+    border-bottom: 1rpx solid #ededed;
+    font-size: 28rpx;
+    color: #999;
+}
+.form-box .input-placeholder{
+    color: #aaa;
+}
+.form-box button{
+    margin:30rpx 30rpx 0 0;
+}
