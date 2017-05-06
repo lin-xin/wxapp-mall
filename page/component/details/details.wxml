@@ -1,0 +1,18 @@
+<view class="main">
+    <view class="goods-box">
+            <image src="{{goods.image}}" class="goods-thumb"></image>
+            <view class="carts-icon">
+                <image src="/image/cart2.png"></image>
+                <text wx:if="{{hasCarts}}">{{num}}</text>
+            </view>
+            <view class="goods-operation">
+                <text class="goods-operation-num">数量  {{num}}</text>
+                <text class="goods-operation-add">+</text>
+                <text class="goods-to-cart">加入购物车</text>
+                <image src="/image/cart1.png"  class="goods-cart-img"></image>
+            </view>
+            <view class="goods-stock">{{goods.stock}}</view>
+            <view class="goods-title">{{goods.title}}</view>
+            <view class="goods-price">￥ {{goods.price}}</view>
+    </view>
+</view>

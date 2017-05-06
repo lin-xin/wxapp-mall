@@ -23,10 +23,15 @@
     <view class="newest">
         <view class="newest-title"><text>最近新品</text></view>
         <view class="newest-box">
+            
+                
+            
             <view class="newest-list">
-                <image src="/image/s4.png"></image>
-                <view class="newest-text"><text>瓜子 100g</text></view>
-                <view class="newest-text"><text>￥ 0.01</text></view>
+                <navigator url="details/details">
+                    <image src="/image/s4.png"></image>
+                    <view class="newest-text"><text>瓜子 100g</text></view>
+                    <view class="newest-text"><text>￥ 0.01</text></view>
+                </navigator>
             </view>
             <view class="newest-list">
                 <image src="/image/s5.png"></image>
