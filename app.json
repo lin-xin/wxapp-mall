@@ -4,7 +4,8 @@
       "page/component/category/category",
       "page/component/cart/cart",
       "page/component/user/user",
-      "page/component/address/address"
+      "page/component/address/address",
+      "page/component/orders/orders"
   ],
   "window": {
     "navigationBarTextStyle": "#ffffff",

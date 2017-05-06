@@ -1,0 +1,91 @@
+@import '../../common/common.wxss';
+
+.orders-address{
+    position: relative;
+    padding: 20rpx 50rpx 20rpx 35rpx;
+    font-size: 14px;
+    line-height: 25px;
+    border-bottom: 20rpx solid #ededed;
+    color: #adadad;
+}
+.orders-address::after{
+    position: absolute;
+    right: 30rpx;
+    top: 60rpx;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 4rpx solid #7f7f7f;
+    border-right: 4rpx solid #7f7f7f;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.orders-address-name{
+    display: inline-block;
+    width: 300rpx;
+}
+
+.orders-no-address{
+    position: relative;
+    height: 90rpx;
+    line-height: 90rpx;
+    color: #adadad;
+    border-bottom: 20rpx solid #ededed;
+    text-align: center;
+}
+.orders-no-address::after{
+    position: absolute;
+    right: 30rpx;
+    top: 34rpx;
+    content: '';
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 4rpx solid #7f7f7f;
+    border-right: 4rpx solid #7f7f7f;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.orders-box{
+    padding-bottom: 105rpx;
+}
+.orders-list{
+    position: relative;
+    padding:20rpx 20rpx 20rpx 220rpx;
+    height: 180rpx;
+    border-bottom: 1rpx solid #ededed;
+}
+.orders-thumb{
+    position: absolute;
+    top: 20rpx;
+    left: 20rpx;
+    width: 180rpx;
+    height: 180rpx;
+}
+.orders-list view{
+    line-height: 60rpx;
+}
+
+.orders-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 95rpx;
+    line-height: 95rpx;
+    border-top: 1rpx solid #ededed;
+}
+.orders-footer .orders-footer-total{
+    display: inline-block;
+    width: 510rpx;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+    color: #a55350;
+}
+.orders-footer .orders-footer-btn{
+    display: inline-block;
+    width: 240rpx;
+    text-align: center;
+    color: #fff;
+    background: #AB956D;
+}

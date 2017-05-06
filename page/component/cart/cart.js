@@ -6,9 +6,6 @@ Page({
     totalPrice:0,
     selectAllStatus:true
   },
-  onLoad() {
-    this.getTotalPrice();
-  },
   onShow() {
     this.setData({
       hasList: true,
@@ -17,6 +14,7 @@ Page({
         {id:2,title:'素米 500g',image:'/image/s6.png',num:1,price:0.03,selected:true}
       ]
     });
+    this.getTotalPrice();
   },
   /**
    * 当前商品选中事件

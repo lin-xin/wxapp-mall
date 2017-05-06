@@ -19,7 +19,7 @@
         <view class="cart-footer">
             <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" class="total-select" bindtap="selectAll"/>
             <icon wx:else type="circle" color="#fff" class="total-select" bindtap="selectAll"/>
-            <view class="order-icon"></view>
+            <navigator url="../orders/orders"><view class="order-icon"></view></navigator>
             <text>全选</text>
             <text class="cart-toatl-price">￥{{totalPrice}}</text>
         </view>

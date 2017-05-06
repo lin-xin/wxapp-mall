@@ -1,5 +1,8 @@
 @import '../../common/common.wxss';
 
+.cart-box{
+    padding-bottom: 100rpx;
+}
 .cart-list{
     position: relative;
     padding: 20rpx 20rpx 20rpx 285rpx;
