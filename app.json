@@ -6,7 +6,9 @@
       "page/component/user/user",
       "page/component/address/address",
       "page/component/orders/orders",
-      "page/component/details/details"  ],
+      "page/component/details/details",
+      "page/component/list/list"
+  ],
   "window": {
     "navigationBarTextStyle": "#ffffff",
     "navigationBarTitleText": "零食商贩",

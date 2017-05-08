@@ -23,7 +23,8 @@ swiper-item image {
     width: 100%;
     height: 375rpx;
 }
-.select-top-small image,.select-bottom image{
+.select-top-small image,.select-bottom image,.select-top-small navigator,.select-bottom navigator{
+    display: block;
     width: 100%;
     height: 100%;
 }

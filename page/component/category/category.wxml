@@ -16,8 +16,10 @@
                 </view>
                 <view class="product">
                     <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
-                        <image src="{{val.thumb}}"></image>
-                        <view class="classname"><text>{{val.name}}</text></view>
+                        <navigator url="../list/list">
+                            <image src="{{val.thumb}}"></image>
+                            <view class="classname"><text>{{val.name}}</text></view>
+                        </navigator>
                     </view>
                 </view>
             </view>
