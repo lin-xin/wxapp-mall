@@ -102,7 +102,7 @@
 }
 .goods-operation-add{
     width: 80rpx;
-    margin-right: 45rpx;
+    margin-right: 30rpx;
 }
 .goods-to-cart{
     width: 210rpx;
