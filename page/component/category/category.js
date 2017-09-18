@@ -18,19 +18,30 @@ Page({
         wx.request({
             url:'http://www.gdfengshuo.com/api/wx/cate-detail.txt',
             success(res){
-                console.log(res.data)
                 self.setData({
-                    detail : res.data.result
+                    detail : res.data
                 })
             }
         });
         
     },
     switchTab(e){
-        this.setData({
-            toView : e.target.dataset.id,
-            curIndex : e.target.dataset.index
+      const self = this;
+      this.setData({
+        isScroll: true
+      })
+      setTimeout(function(){
+        self.setData({
+          toView: e.target.dataset.id,
+          curIndex: e.target.dataset.index
         })
+      },0)
+      setTimeout(function () {
+        self.setData({
+          isScroll: false
+        })
+      },1)
+        
     }
     
 })

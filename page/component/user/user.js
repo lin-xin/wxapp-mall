@@ -28,7 +28,7 @@ Page({
       url: 'http://www.gdfengshuo.com/api/wx/orders.txt',
       success(res){
         self.setData({
-          orders: res.data.orders
+          orders: res.data
         })
       }
     })

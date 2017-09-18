@@ -19,12 +19,12 @@ Page({
       }
     })
   },
-  formSubmit(){
-    var self = this;
-    if(self.data.address.name && self.data.address.phone && self.data.address.detail){
+  formSubmit(e){
+    const value = e.detail.value;
+    if (value.name && value.phone && value.detail){
       wx.setStorage({
         key: 'address',
-        data: self.data.address,
+        data: value,
         success(){
           wx.navigateBack();
         }
@@ -36,20 +36,5 @@ Page({
         showCancel:false
       })
     }
-  },
-  bindName(e){
-    this.setData({
-      'address.name' : e.detail.value
-    })
-  },
-  bindPhone(e){
-    this.setData({
-      'address.phone' : e.detail.value
-    })
-  },
-  bindDetail(e){
-    this.setData({
-      'address.detail' : e.detail.value
-    })
   }
 })

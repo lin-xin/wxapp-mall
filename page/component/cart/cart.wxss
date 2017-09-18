@@ -92,8 +92,11 @@
     top: 25rpx;
     width: 45rpx;
     height: 45rpx;
-    background-image: url(/image/icon3.png);
-    background-size: 100%;
+}
+.order-icon image,.order-icon navigator{
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
 }
 .cart-toatl-price{
     float: right;

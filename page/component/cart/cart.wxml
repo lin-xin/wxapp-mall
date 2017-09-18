@@ -8,7 +8,7 @@
                 <text class="cart-pro-name">{{item.title}}</text>
                 <text class="cart-pro-price">￥{{item.price}}</text>
                 <view class="cart-count-box">
-                    <text class="cart-count-down" bindtap="minusCount" data-index="{{index}}">-</text>
+                    <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
                     <text class="cart-count-num">{{item.num}}</text>
                     <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
                 </view>
@@ -19,7 +19,9 @@
         <view class="cart-footer">
             <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" class="total-select" bindtap="selectAll"/>
             <icon wx:else type="circle" color="#fff" class="total-select" bindtap="selectAll"/>
-            <navigator url="../orders/orders"><view class="order-icon"></view></navigator>
+            <view class="order-icon">
+                <navigator url="../orders/orders"><image src="/image/icon3.png"></image></navigator>
+            </view>
             <text>全选</text>
             <text class="cart-toatl-price">￥{{totalPrice}}</text>
         </view>

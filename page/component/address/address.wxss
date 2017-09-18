@@ -6,7 +6,6 @@
 .form-box input{
     height: 90rpx;
     border-bottom: 1rpx solid #ededed;
-    font-size: 28rpx;
     color: #999;
 }
 .form-box .input-placeholder{

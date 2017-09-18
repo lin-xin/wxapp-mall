@@ -4,7 +4,10 @@ Page({
     carts:[],               // 购物车列表
     hasList:false,          // 列表是否有数据
     totalPrice:0,           // 总价，初始为0
-    selectAllStatus:true    // 全选状态，默认全选
+    selectAllStatus:true,    // 全选状态，默认全选
+    obj:{
+        name:"hello"
+    }
   },
   onShow() {
     this.setData({
@@ -87,6 +90,7 @@ Page({
    */
   minusCount(e) {
     const index = e.currentTarget.dataset.index;
+    const obj = e.currentTarget.dataset.obj;
     let carts = this.data.carts;
     let num = carts[index].num;
     if(num <= 1){
