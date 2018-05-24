@@ -7,7 +7,8 @@
       "page/component/address/address",
       "page/component/orders/orders",
       "page/component/details/details",
-      "page/component/list/list"
+      "page/component/list/list",
+      "page/component/search/search"
   ],
   "window": {
     "navigationBarTextStyle": "#ffffff",

@@ -1,0 +1,63 @@
+<view class="main">
+    <view class="search-box">
+        <input class="search-input" placeholder="搜索" value="{{value}}" bindinput="searchInput" />
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        <text class="search-btn" wx:if="{{showResult}}" bindtap="cancelSearch">取消</text>
+    </view>
+    <view class="result" wx:if="{{showResult}}">
+        <view class="result-box" wx:if="{{result.length > 0}}">
+            <view class="result-list" wx:for="{{result}}" wx:key="index">
+                <navigator url="{{item.url}}">
+                    <image src="{{item.thumb}}"></image>
+                    <view class="result-text">
+                        <text>{{item.title}}</text>
+                    </view>
+                    <view class="result-text">
+                        <text>￥ {{item.price}}</text>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="result-null" wx:else>
+            <view class="null-tips">Oh~~ 搜索结果为空！</view>
+            <view class="recommend-title">
+                <text>相关推荐</text>
+            </view>
+            <view class="recommend-box">
+                <view class="result-list" wx:for="{{result}}" wx:key="index">
+                    <navigator url="{{item.url}}">
+                        <image src="{{item.thumb}}"></image>
+                        <view class="result-text">
+                            <text>{{item.title}}</text>
+                        </view>
+                        <view class="result-text">
+                            <text>￥ {{item.price}}</text>
+                        </view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="init-page" wx:else>
+        <view wx:if="{{history.length > 0}}">
+            <view class="title">
+                <text>搜索记录</text>
+            </view>
+            <view class="tags">
+                <text wx:for="{{history}}" wx:key="index" data-text="{{item}}" bindtap="keywordHandle">{{item}}</text>
+            </view>
+        </view>
+        <view class="title">
+            <text>热点推荐</text>
+        </view>
+        <view class="tags">
+            <text wx:for="{{hot}}" wx:key="index" data-text="{{item}}" bindtap="keywordHandle">{{item}}</text>
+        </view>
+    </view>
+
+    <view class="keywords" wx:if="{{showKeywords}}">
+        <view class="keywords-item" wx:for="{{keywords}}" wx:key="index" data-text="{{item}}" bindtap="keywordHandle">{{item}}</view>
+    </view>
+
+
+</view>

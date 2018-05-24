@@ -6,6 +6,14 @@
             </swiper-item>
         </block>
     </swiper>
+    <view class="search">
+        <navigator url="search/search">
+            <view class="search-text">
+                <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+                搜 索
+            </view>
+        </navigator>
+    </view>
     <view class="selected">
         <view class="select-title"><text>精选主题</text></view>
         <view class="select-top">
