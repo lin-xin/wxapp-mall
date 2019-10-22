@@ -1,8 +1,0 @@
-page{
-    background-color: #ffffff;
-    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
-    font-size: 32rpx;
-}
-.navigator-hover{
-    background: none;
-}
