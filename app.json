@@ -1,17 +1,17 @@
 {
   "pages": [
-      "page/component/index",
-      "page/component/category/category",
-      "page/component/cart/cart",
-      "page/component/user/user",
-      "page/component/address/address",
-      "page/component/orders/orders",
-      "page/component/details/details",
-      "page/component/list/list",
-      "page/component/search/search"
+    "page/component/index",
+    "page/component/category/category",
+    "page/component/cart/cart",
+    "page/component/user/user",
+    "page/component/address/address",
+    "page/component/orders/orders",
+    "page/component/details/details",
+    "page/component/list/list",
+    "page/component/search/search"
   ],
   "window": {
-    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "零食商贩",
     "navigationBarBackgroundColor": "#AB956D",
     "backgroundColor": "#eeeeee",
@@ -20,29 +20,34 @@
   "tabBar": {
     "color": "#b7b7b7",
     "selectedColor": "#AB956D",
-    "borderStyle": "#f5f5f5",
+    "borderStyle": "white",
     "backgroundColor": "#f5f5f5",
-    "list": [{
-      "pagePath": "page/component/index",
-      "iconPath": "image/12.png",
-      "selectedIconPath": "image/11.png",
-      "text": "主页"
-    }, {
-      "pagePath": "page/component/category/category",
-      "iconPath": "image/22.png",
-      "selectedIconPath": "image/21.png",
-      "text": "分类"
-    }, {
-      "pagePath": "page/component/cart/cart",
-      "iconPath": "image/32.png",
-      "selectedIconPath": "image/31.png",
-      "text": "购物车"
-    }, {
-      "pagePath": "page/component/user/user",
-      "iconPath": "image/42.png",
-      "selectedIconPath": "image/41.png",
-      "text": "我的"
-    }]
+    "list": [
+      {
+        "pagePath": "page/component/index",
+        "iconPath": "image/12.png",
+        "selectedIconPath": "image/11.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "page/component/category/category",
+        "iconPath": "image/22.png",
+        "selectedIconPath": "image/21.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "page/component/cart/cart",
+        "iconPath": "image/32.png",
+        "selectedIconPath": "image/31.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "page/component/user/user",
+        "iconPath": "image/42.png",
+        "selectedIconPath": "image/41.png",
+        "text": "我的"
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,
@@ -50,5 +55,6 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug": false
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }
