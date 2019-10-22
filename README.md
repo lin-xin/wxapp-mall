@@ -1,5 +1,5 @@
 # wxapp-mall
-微信小程序 商城
+微信小程序 商城（uni-app 版本的代码请看[uni分支](https://github.com/lin-xin/wxapp-mall/tree/uni)，可打包成APP、小程序、H5）
 
 ## 相关
 文章：[微信小程序之购物车功能](https://github.com/lin-xin/blog/issues/14)
